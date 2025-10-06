@@ -1,0 +1,357 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav {
+    position: sticky;
+    top: 0px;
+    /* border: 2px solid rgb(189, 25, 25); */
+    /* remove the border */
+    gap: 20px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    height: 5vh;
+    align-items: center;
+    min-height: 0;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.nav>* {
+    min-height: 0;
+    max-height: 100%;
+}
+
+.button {
+    background-color: rgb(53, 47, 47);
+    border: none;
+    cursor: pointer;
+    border-radius: 70px;
+    padding: 5px;
+}
+
+.navimg {
+    width: 20px;
+}
+
+.navimg:hover {
+    transform: scale(1.1);
+}
+
+.wrapper {
+    border-radius: 20px;
+    background-color: rgb(97, 94, 94);
+    padding: 3px;
+    cursor: pointer;
+    gap: 2px;
+}
+
+.wrapper:hover {
+    transform: scale(1.02);
+    /* background-color: rgb(51, 44, 44); */
+    border: 1px solid rgb(240, 240, 240);
+}
+
+.input {
+    border: none;
+    background-color: transparent;
+    color: rgb(247, 239, 239);
+}
+
+::placeholder {
+    color: rgb(247, 239, 239);
+    opacity: 1;
+}
+
+.input:focus {
+    outline: none;
+    border-color: inherit;
+    transform: scale(1.02);
+}
+
+.logo,
+.navimg {
+    filter: invert(1)
+}
+
+.logo {
+    margin-left: 25px;
+}
+
+.frist {
+    display: flex;
+    align-items: center;
+    ;
+    padding: 2p;
+    /* border: 2px solid #f3efef; */
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* border: 2px solid #f3efef; */
+}
+
+.last {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+    /* border: 2px solid #f3efef; */
+}
+
+.bbttn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 70px;
+    padding: 5px 10px;
+    color: white;
+}
+
+.explore {
+    font-weight: bold;
+    background-color: rgb(254, 255, 255);
+    color: black;
+}
+
+.installapp {
+    gap: 5px;
+}
+
+.accunt {
+    background-color: salmon;
+    height: 40px;
+    width: 50px;
+}
+
+.bbttn:hover {
+    transform: scale(1.05);
+    background-color: rgb(85, 78, 78);
+}
+
+.main {
+    height: 80vh;
+    /* overflow:auto; */
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    gap: 10px;
+    background-color: rgb(109, 84, 84);
+    position: relative;
+}
+
+.leftmain {
+    border: 1px solid;
+    color: white;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+}
+
+.middlemain {
+    border: 1px solid;
+    color: white;
+    /* padding: 10px; */
+    overflow-y: auto;
+    position: relative;
+}
+
+.rightmain {
+    border: 1px solid;
+    color: white;
+    /* padding: 10px; */
+    overflow-y: auto;
+}
+
+.rightnav,
+.leftnav,
+.middlenav {
+    position: sticky;
+    top: 0px;
+    /* background-color: trancsparent; */
+    padding: 1px;
+    z-index: 1;
+    /* box-shadow: 0px 2px 70px rgb(255, 255, 255); */
+}
+
+.songlist {
+    /* border: 2px solid rgb(255, 255, 255); */
+    margin-top: 10px;
+    padding: 5px;
+    overflow-y: auto;
+}
+
+.musiclist {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(32, 29, 29);
+}
+
+.musiclist:hover {
+    background-color: rgb(85, 78, 78);
+    transform: scale(1.02);
+}
+
+.musiclist h4 {
+    overflow: hidden;
+}
+
+.buttonmain {
+    background-color: rgb(53, 47, 47);
+    border: none;
+    cursor: pointer;
+    border-radius: 70px;
+    padding: 5px;
+    color: white;
+    margin: 5px;
+    box-shadow: 2px 2px 5px rgb(241, 238, 238);
+}
+
+.buttonmain:hover {
+    background-color: rgb(85, 78, 78);
+    transform: scale(1.05);
+}
+
+.card {
+    height:200px;
+    width: 160px;
+    background-color: rgb(92, 56, 56);
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.cardcontaner {
+    border: 3px solid rgba(0, 0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    height: 88.6%;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.playbar {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.playbar button {
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.playbar button img {
+    padding: 3px;
+}
+
+.playbar button :hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgb(247, 238, 238);
+}
+.songtime{
+    border: 1px solid rgb(160, 26, 26);
+    width: 200px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* position: absolute; */
+    
+}
+.circule{
+    height: 10px;
+    width: 10px;
+    background-color: rgba(255, 255, 255, 0.932);
+    border-radius: 10px;
+    /* animation: blinker 1.5s linear infinite ;.............................................. */
+    transition: left 0.5s ease; 
+    position: relative;
+    left:0%;
+    cursor: pointer;
+}
+
+@keyframes blinker {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.songinfo {
+   position: relative;
+    height: 20px;
+    width: 200px;
+    background-color: transparent;
+    border-radius: none;
+    /* border: 1px solid rgb(255, 255, 255); */
+    margin: 2px;
+    font-size: small;  
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+.songinfo .marquee {
+    display: inline-block;
+    padding-left: 100%; /* Start outside the box */
+    animation: marquee 15s linear infinite;
+    white-space: nowrap;
+}
+@keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+.time{
+    margin-top: 25px;
+    font-size: x-small;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    height: 15vh;
+    background-color: rgb(92, 56, 56);
+    color: white;
+    display: flex;
+
+}
